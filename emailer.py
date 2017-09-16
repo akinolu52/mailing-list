@@ -1,6 +1,7 @@
 import weather
 import send_mail
 
+
 def get_emails():
     emails = {}
     try:
@@ -33,5 +34,3 @@ if __name__ == '__main__':
     send_mail.send_email(emails, schedule, forecast)
 
     print('mail sent!')
-
-
