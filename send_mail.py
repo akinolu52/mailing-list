@@ -6,8 +6,7 @@ def send_email(emails, schedule, forecast):
     server.starttls()
 
     from_email = 'akinolu52@gmail.com'
-    from_password = 'methane123'
-    # from_password = input("Enter your password: ")
+    from_password = input("Enter your password: ")
     server.login(from_email, from_password)
 
     for to_email, name in emails.items():
