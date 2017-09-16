@@ -1,4 +1,4 @@
-#Python Mailing List
+<b>Python Mailing List</b>
 
 This is a simple mailing list in python...
 
