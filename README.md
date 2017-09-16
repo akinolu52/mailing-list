@@ -1,5 +1,9 @@
-<b>Python Mailing List</b>
+<h1><strong>Python Mailing List</strong></h1>
 
 This is a simple mailing list in python...
 
-By Akinyemi Emmanuel
+fork & star!
+
+Made with &#x2764;
+
+<strong>By Akinyemi Emmanuel</strong>
