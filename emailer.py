@@ -1,4 +1,3 @@
-import weather
 import send_mail
 
 
@@ -14,23 +13,21 @@ def get_emails():
     return emails
 
 
-def get_scheduler():
+def get_message():
     try:
-        scheduler_file = open('scheduler.txt', 'r')
-        schedule = scheduler_file.read()
+        message_file = open('message.txt', 'r')
+        message = message_file.read()
 
     except FileNotFoundError as err:
         print(err)
 
-    return schedule
+    return message
 
 if __name__ == '__main__':
     emails = get_emails()
 
-    schedule = get_scheduler()
+    message_content = get_message()
 
-    forecast = weather.get_weather_forecast()
-
-    send_mail.send_email(emails, schedule, forecast)
+    send_mail.send_email(emails, message_content)
 
     print('mail sent!')
